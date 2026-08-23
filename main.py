@@ -12,8 +12,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # TCP 端口探测使用更高并发和更短超时；TLS/HTTP 探测使用较低并发和更长超时。
 TIMEOUT = 1.5
 TCP_TIMEOUT = 0.6
-MAX_WORKERS = 500
-TCP_MAX_WORKERS = 1000
+MAX_WORKERS = 200
+TCP_MAX_WORKERS = 500
 
 # 第二步 TLS 探测时使用的 SNI。
 TLS_DOMAIN = "www.cloudflare.com"
